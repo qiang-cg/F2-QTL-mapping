@@ -1,1 +1,5 @@
-
+1. vcf_qtl_transformation_abh.pl is a perl script which was used to transform vcf file into genotype file. 
+   The input file is filted vcf file, and the output is genotype file. 
+   In the genotype file, the genotype is coded as abh according to parental lines.
+2. Then, the SNP genotypes was merged into bin markers by SNPbinner (Gonda et al., 2019). 
+   The parameter was recoded in snpbinner.sh.
