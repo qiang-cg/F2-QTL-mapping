@@ -12,7 +12,7 @@ phenotype <- colnames(cross$pheno)
 perms_lt <- list()
 for(phe in phenotype){
   phe_col <-  which(phenotype==phe)
-  perms <- cim(cross, pheno.col=phe_col, n.marcovar=5, window=10, method="hk", map.function="kosambi", n.perm=1000)
+  perms <- cim(cross, pheno.col=phe_col, n.marcovar=3, window=10, method="hk", map.function="kosambi", n.perm=1000)
   perms_lt[[phe]] <- perms
 }
  
