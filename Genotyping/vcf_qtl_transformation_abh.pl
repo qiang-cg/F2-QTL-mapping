@@ -21,7 +21,7 @@ while(<R>)
           my $ml=1;
           if ($tm[4]=~ /\,/) {$ml=0;}         
  
-          my $p1s=$tm[433];   #N
+          my $p1s=$tm[433];   #parent A, the index shold be set as the parent position in the vcf file
           my @tn1=split(/:/,$p1s);
           if($tn1[0] =~ /\./){next;}
           my @p1go=();
@@ -34,7 +34,7 @@ while(<R>)
           if($p1go[0] eq "."){$p1ho=0;}
           else               {$p1dp=$tn1[2];} 
           
-          my $p2s=$tm[434];     #R
+          my $p2s=$tm[434];     #parent B, parent A, the index shold be set as the parent position in the vcf file 
           my @tn2=split(/:/,$p2s);
           if($tn2[0] =~ /\./){next;}
           my @p2go=();
